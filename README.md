@@ -1,5 +1,6 @@
 # PyConsole
 Console, same as 'win + r -> cmd', but with ability to make custom commands
+AND!!! This Console has my own test data keeper, such as json, but much easier.
 
 ## Class Command, which need to make your own command:
 ```py
