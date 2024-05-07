@@ -1,5 +1,5 @@
-from CommandHandler.main import CommandHandlerThread
-from DataManager.main import *
+from main import CommandHandlerThread
+from dm import *
 import os
 
 app_info = Chapter("app_info")
