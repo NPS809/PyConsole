@@ -4,8 +4,10 @@ Console, same as 'win + r -> cmd', but with ability to make custom commands.
 AND!!! This Console has my own test data keeper, such as json, but much easier.
 
 ## Class Command, which need to make your own command:
-```py
-Command(name: str, desc: str, action)
+```python
+from commands import Command
+
+Command("name", "desc", "action")
 # action - your function with list in arguments
 ```
 
@@ -17,6 +19,8 @@ def MyCommandAction(args: list):
 
 You need to add your command to 'commands' list in commands.py
 ```py
+from commands import Command
+
 commands = [
   Command('your_command_keyword', 'your command description', MyCommandAction)
 ]

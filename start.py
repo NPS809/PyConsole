@@ -1,4 +1,4 @@
-from main import CommandHandlerThread
+from chandler import CommandHandlerThread
 import os
 
 os.system("title OkeConsole")
