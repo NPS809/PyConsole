@@ -3,7 +3,7 @@ from commands import commands
 
 def CommandHandlerThread():
     while True:
-        ui = input(f"\nOkeConsole>")
+        ui = input(f"\nOkeConsole> ")
         if ui.replace(" ", "") != "":
             tmp = CommandCutter(ui)
             CommandExecuter(tmp["command"], tmp["args"])

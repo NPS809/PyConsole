@@ -16,7 +16,6 @@ commands = [
     Command("cls", "Выполняет очистку экрана", System.Cls),
     Command("echo", "Выводит заданный текст на экран консоли", System.Echo),
     Command("help", "Список всех доступных команд", Help),
-    Command("updlog", "Информация о последнем обновлении", System.UpdateLog),
     Command("exit", "Выход из приложения", System.Exit),
     Command("color", "Настроить цвет текста и фона в консоли", System.Color)
 ]
