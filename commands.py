@@ -20,6 +20,12 @@ class BaseCommands:
         else:
             os.system(f"color {args[0]}")
 
+    def Title(args: list):
+        if len(args) > 0:
+            os.system(f"title {" ".join(args)}")
+        else:
+            print("title [your_title]")
+
     @staticmethod
     def Exit(args: list):
         exit()
@@ -42,5 +48,6 @@ commands = [
     Command("echo", "Выводит заданный текст на экран консоли", BaseCommands.Echo),
     Command("help", "Список всех доступных команд", Help),
     Command("exit", "Выход из приложения", BaseCommands.Exit),
-    Command("color", "Настроить цвет текста и фона в консоли", BaseCommands.Color)
+    Command("color", "Настроить цвет текста и фона в консоли", BaseCommands.Color),
+    Command("title", "Установить заголовок терминала", BaseCommands.Title)
 ]
